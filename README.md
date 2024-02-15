@@ -1,5 +1,5 @@
 
-Storybook will be available at [http://localhost:8083/storybook](http://localhost:8083/storybook).
+Storybook will be available at [http://localhost:8083/storybook](http://localhost:3000/storybook).
 
 ## Components
 
