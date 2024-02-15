@@ -1,0 +1,9 @@
+.label {
+    /* Define styles for default label */
+  }
+  
+  .label.disabled {
+    /* Define styles for disabled label */
+    opacity: 0.5; /* Example style for disabled state */
+  }
+  

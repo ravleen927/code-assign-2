@@ -1,0 +1,16 @@
+.storybook-radio-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .storybook-radio-button input[type='radio'] {
+    margin-right: 8px;
+  }
+  
+  .storybook-radio-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
