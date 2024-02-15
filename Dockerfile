@@ -1,23 +1,20 @@
-# Use Node.js image
-FROM node:latest
+# Use an official Node runtime as the base image
+FROM node:14
 
-# Set working directory
-WORKDIR /app
+# Set the working directory in the container
+WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json
+# Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-# Install dependencies
+# Install npm dependencies
 RUN npm install
 
-# Copy the rest of the application
+# Copy the entire project to the working directory
 COPY . .
 
-# Build the application
-RUN npm run build
+# Expose the port that Storybook runs on
+EXPOSE 6006
 
-# Expose port
-EXPOSE 8083
-
-# Command to run the application
-CMD ["npm", "start"]
+# Start Storybook when the container launches
+CMD ["npm", "run", "storybook"]
